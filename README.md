@@ -38,9 +38,25 @@ npm run dev
 
 ### Running Tests
 
+This project includes comprehensive test coverage using Vitest and React Testing Library. You have several options for running tests:
+
 ```bash
-npm test
+# Run tests in watch mode
+npm run test
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run tests with UI interface
+npm run test:ui
 ```
+
+The test suite covers:
+- Component rendering and functionality
+- Context provider behavior
+- User interactions
+- localStorage integration
+- Error handling
 
 ### Linting
 
@@ -77,7 +93,8 @@ The project follows the [Airbnb JavaScript Style Guide](https://github.com/airbn
 │   │   ├── TodoList.jsx  # Main todo list component
 │   │   └── __tests__/    # Component tests
 │   ├── context/          # React context for state management
-│   │   └── TodoContext.jsx
+│   │   ├── TodoContext.jsx  # Todo state management and localStorage integration
+│   │   └── __tests__/      # Context tests
 │   ├── App.jsx           # Main application component
 │   └── main.jsx          # Application entry point
 ├── .eslintrc.js          # ESLint configuration

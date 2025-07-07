@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { TodoProvider, useTodoContext } from '../TodoContext';
 
 const TestComponent = () => {
-  const context = useTodoContext();
+  useTodoContext(); // Just call the hook to test the context error
   return null;
 };
 
